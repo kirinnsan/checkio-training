@@ -7,6 +7,9 @@ def time_converter(time):
         meridiem = "p.m."
     elif new_hour == 12:
         meridiem = "p.m."
+    elif new_hour == 00:
+        meridiem = "a.m."
+        new_hour = 12
 
     return f"{new_hour}:{minute} {meridiem}"
 
